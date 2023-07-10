@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Project Todo</title>
+    <script type="module" src="/src/main.ts"></script>
+    <link rel="stylesheet" href="/src/style/style.css" />
+  </head>
+  <body>
+    <main class="todo-main">
+      <section class="todo-main-container">
+        <h1 class="offscreen">My Todo List</h1>
+        <form data-input class="todo-main-input">
+          <label for="todoinput" class="offscreen"
+            >Enter a new to do item</label
+          >
+          <input
+            type="text"
+            name="todoinput"
+            id="todoinput"
+            placeholder="Add Item"
+            type="button"
+            autocomplete="off"
+            maxlength="40"
+          />
+          <button
+            title="Add new item"
+            aria-label="ADd new item to the todo list"
+          >
+            +
+          </button>
+        </form>
+
+        <section class="todo-main-body">
+          <section class="todo-main-body-header">
+            <h2>List</h2>
+            <button
+              data-clear
+              title="Clear Completed Todos"
+              aria-label="Clear all completed todos"
+            >
+              Clear
+            </button>
+          </section>
+          <section data-todo-list class="todo-main-body-form">
+            <!-- <div>
+              <input type="checkbox" name="inputcheck" id="inputcheck" />
+              <input
+                type="text"
+                name="inputtext"
+                id="inputtext"
+                readonly
+                value="TODO"
+              />
+              <button title="Delete Todo" aria-label="Delete Todo">X</button>
+            </div> -->
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
